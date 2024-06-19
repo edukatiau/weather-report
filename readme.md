@@ -2,6 +2,8 @@
 
 Este é um projeto de relatório de clima que tem como objetivo fornecer informações atualizadas sobre as condições climáticas em diferentes regiões.
 
+![Previsão do Tempo](images/relatorio.png "Ícone de Previsão do Tempo")
+
 ## Funcionalidades
 
 - Consulta de clima por localização
