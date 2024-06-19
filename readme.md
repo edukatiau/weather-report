@@ -4,7 +4,7 @@ Este é um projeto de relatório de clima que tem como objetivo fornecer informa
 
 O projeto apresentou uma redução de tempo em **99%** comparado a emissão do relatório manualmente, além de ser fácil uso por qualquer usuário.
 
-<img src="images/relatorio.png " width="400" alt="Relatório de Previsão do Tempo">
+<img src="resources/relatorio.png " width="400" alt="Relatório de Previsão do Tempo">
 
 ## Funcionalidades
 
