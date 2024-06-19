@@ -1,6 +1,8 @@
 # Projeto de Relatório de Clima
 
-Este é um projeto de relatório de clima que tem como objetivo fornecer informações atualizadas sobre as condições climáticas em diferentes regiões.
+Este é um projeto de relatório de clima que tem como objetivo fornecer informações atualizadas sobre as condições climáticas em diferentes regiões. 
+
+O projeto apresentou uma redução de tempo em **99%** comparado a emissão do relatório manualmente, além de ser fácil uso por qualquer usuário.
 
 <img src="images/relatorio.png " width="400" alt="Relatório de Previsão do Tempo">
 
@@ -18,3 +20,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
+
+## Observação
+
+O projeto está pré-definido para a cidade Sapucaia do Sul - RS (5195).
