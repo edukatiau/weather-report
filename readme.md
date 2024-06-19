@@ -2,7 +2,7 @@
 
 Este é um projeto de relatório de clima que tem como objetivo fornecer informações atualizadas sobre as condições climáticas em diferentes regiões.
 
-![Previsão do Tempo](images/relatorio.png "Ícone de Previsão do Tempo")
+<img src="images/relatorio.png " width="400" alt="Relatório de Previsão do Tempo">
 
 ## Funcionalidades
 
