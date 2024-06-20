@@ -11,8 +11,19 @@ ano = data.year
 mes = data.month
 dia = data.day
 
+import os
+import sys
+
+# Verifica se estamos rodando como um executável PyInstaller
+if getattr(sys, 'frozen', False):
+    application_path = sys._MEIPASS
+else:
+    application_path = os.path.dirname(os.path.abspath(__file__))
+
+file_path = os.path.join(application_path, 'template', 'modelo.xlsx')
+
 # Carregando a planilha modelo
-tabela = pd.read_excel("template/modelo.xlsx", sheet_name="Plan3")
+tabela = pd.read_excel(file_path, sheet_name="Plan3")
 
 # Inicializando variáveis
 iDATA = iTEXTMORNING = ""
@@ -109,7 +120,7 @@ try:
     os.makedirs("output", exist_ok=True)
 
     # Copiando o modelo de planilha para a pasta de saída
-    shutil.copyfile("template/modelo.xlsx", f"output/Previsão meteorológica {dataPlanilha}.xlsx")
+    shutil.copyfile(file_path, f"output/Previsão meteorológica {dataPlanilha}.xlsx")
 
     # Salvando os dados na planilha
     with pd.ExcelWriter(f"output/Previsão meteorológica {dataPlanilha}.xlsx", mode="a", if_sheet_exists='overlay') as escritor:
