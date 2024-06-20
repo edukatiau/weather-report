@@ -36,5 +36,5 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     icon=['resources\\icon.ico'],
-    version='meu_script.txt'
+    version='meu_script.txt',
 )
