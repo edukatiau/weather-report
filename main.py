@@ -6,6 +6,12 @@ import os
 import sys
 from dotenv import load_dotenv
 
+import warnings
+
+# Ignorar FutureWarning
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+
 # Obtendo a data atual
 data = datetime.date.today()
 ano = data.year
@@ -39,6 +45,28 @@ iCHUVA = iUMIDADEMIN = iUMIDADEMAX = iTEMPERATURAMIN = iTEMPERATURAMAX = 0
 
 # Código do tipo da consulta
 iTIPOCONSULTA = 3
+
+print ("")
+print ("  _____              _        _                         ")
+print (" |  __ \            (_)      | |                        ")
+print (" | |__) |_ __  ___   _   ___ | | _ __ ___    ___   ___  ")
+print (" |  ___/| '__|/ _ \ | | / _ \| || '_ ` _ \  / _ \ / __| ")
+print (" | |    | |  | (_) || ||  __/| || | | | | ||  __/| (__  ")
+print (" |_|    |_|   \___/ | | \___||_||_| |_| |_| \___| \___| ")
+print ("                   _/ |                                 ")
+print ("                  |__/                                  ")
+print ("")
+
+print(f"{'PREVISÃO METEOROLÓGICA':^56}")
+print(f"{'Development by Eduardo Rigon @ 2024':^56}")
+print("")
+
+print(f"{'# Resultado estará na pasta /output':^56}")
+print(f"{'# Aperte enter para iniciar...':^56}")
+print("")
+
+start = input()
+
 try:
     # 1=Tempo agora na cidade
     if iTIPOCONSULTA == 1:
