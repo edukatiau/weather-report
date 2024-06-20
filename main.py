@@ -3,6 +3,7 @@ import pandas as pd
 import datetime
 import shutil
 import os
+import sys
 from dotenv import load_dotenv
 
 # Obtendo a data atual
@@ -10,9 +11,6 @@ data = datetime.date.today()
 ano = data.year
 mes = data.month
 dia = data.day
-
-import os
-import sys
 
 # Verifica se estamos rodando como um executável PyInstaller
 if getattr(sys, 'frozen', False):
@@ -30,9 +28,7 @@ load_dotenv(dotenv_path=env_path)
 # Token de acesso e ID da cidade (Sapucaia do Sul)
 load_dotenv()
 iTOKEN = os.getenv("iTOKEN")
-#"b5225c1bcb3bd3befea03f0bcd39d28c"
 iCIDADE = os.getenv("iCIDADE")
-#"5195"
 
 # Carregando a planilha modelo
 tabela = pd.read_excel(file_path, sheet_name="Plan3")
