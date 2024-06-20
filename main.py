@@ -22,17 +22,24 @@ else:
 
 file_path = os.path.join(application_path, 'template', 'modelo.xlsx')
 
+# Define o caminho do arquivo .env baseado no application_path
+env_path = os.path.join(application_path, '.env')
+# Carrega as variáveis de ambiente do arquivo .env
+load_dotenv(dotenv_path=env_path)
+
+# Token de acesso e ID da cidade (Sapucaia do Sul)
+load_dotenv()
+iTOKEN = os.getenv("iTOKEN")
+#"b5225c1bcb3bd3befea03f0bcd39d28c"
+iCIDADE = os.getenv("iCIDADE")
+#"5195"
+
 # Carregando a planilha modelo
 tabela = pd.read_excel(file_path, sheet_name="Plan3")
 
 # Inicializando variáveis
 iDATA = iTEXTMORNING = ""
 iCHUVA = iUMIDADEMIN = iUMIDADEMAX = iTEMPERATURAMIN = iTEMPERATURAMAX = 0
-
-# Token de acesso e ID da cidade (Sapucaia do Sul)
-load_dotenv()
-iTOKEN = os.getenv("iTOKEN")
-iCIDADE = os.getenv("iCIDADE")
 
 # Código do tipo da consulta
 iTIPOCONSULTA = 3
